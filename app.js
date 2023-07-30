@@ -5,7 +5,7 @@ const cors = require('cors');
 app.disable('x-powered-by');
 app.use(cors());
 const port = process.env.PORT || 3000;
-const { chromium } = require('playwright-chromium');
+const { chromium } = require('playwright');
 const { v4: uuidv4 } = require('uuid');
 
 app.get('/capture/:encodedURL', async (req, res) => {
