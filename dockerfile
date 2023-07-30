@@ -8,11 +8,11 @@ WORKDIR /usr/src/app
 
 COPY package.json ./
 
+RUN npm install
+
 RUN npx playwright install chromium
 
 RUN npx playwright install-deps chromium
-
-RUN npm install
 
 COPY . .
 
