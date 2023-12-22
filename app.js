@@ -19,6 +19,17 @@ app.get('/capture/:encodedURL', async (req, res) => {
     
     try {
         await page.goto(urlToCapture);
+        
+        // Scroll to the bottom of the page
+        await page.evaluate(() => {
+            window.scrollTo(0, document.body.scrollHeight);
+        });
+
+        // Scroll back to the top of the page
+        await page.evaluate(() => {
+            window.scrollTo(0, 0);
+        });
+        
         await page.screenshot({ path: (id + '.png'), fullPage });
 
         if (download) res.download(`${__dirname}/${id}.png`, 'screenshotwebpage_com.png', {maxAge: (7*24*60*60*1000)});
