@@ -8,3 +8,6 @@ In a computer with NodeJS in LTS version installed and with a chromium support, 
 
 ## How it work
 We use the Playwright library to access the webpage and get a screenshot.
+
+## API Documentation
+To see the API Documentation [access here](/API.md).
