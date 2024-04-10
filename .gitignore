@@ -4,3 +4,4 @@ node_modules/
 
 *.png
 !pageNotFound.png
+!screenshotwebpage_com.png

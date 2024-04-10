@@ -1,7 +1,3 @@
-# Website thumbnail generator - A 'Screenshot Webpage API' Documentation
-
-Capture website snapshots effortlessly with our powerful URL screenshot API! Whether you need automated webpage capture, headless browser screenshots, or webpage thumbnail generation, our service has you covered. Simply integrate our API to seamlessly generate website images programmatically. Say goodbye to manual screenshotting and hello to effortless webpage snapshots with our intuitive tool. Try our website screenshot service today!
-
 ## Endpoints
 
 ### GET `/capture`
@@ -24,10 +20,10 @@ Capture website snapshots effortlessly with our powerful URL screenshot API! Whe
    !=`true` Defines to the browser only show the screenshot
 
 #### Request Example:
-GET https://api.screenshotwebpage.com/capture?url=https://www.github.com/
+GET https://localhost:3000/capture?url=https://www.github.com/
 
 #### Response Example:
-![A Response Example](https://api.screenshotwebpage.com/capture?url=https://www.github.com/)
+![A Response Example](/screenshotwebpage_com.png)
 
 #### Response Example When Error:
-![A Response Example](https://api.screenshotwebpage.com/capture)
+![A Response Example](/pageNotFound.png)
